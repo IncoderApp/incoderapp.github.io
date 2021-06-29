@@ -1,0 +1,33 @@
+name: CI
+on:
+  push:
+    branches:
+      - hexo
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout branch
+        uses: actions/checkout@v2
+
+      - name: install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Hexo clean
+        uses: heowc/action-hexo@main
+        with:
+          args: clean
+
+      - name: Hexo generate
+        uses: heowc/action-hexo@main
+        with:
+          args: generate
+
+      - name: Deploy to master
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.CI_TOKEN }}
+          external_repository: IncoderApp/incoderapp.github.io
+          publish_branch: master
+          publish_dir: ./public
