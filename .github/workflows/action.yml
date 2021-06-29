@@ -12,7 +12,7 @@ jobs:
 
       - name: install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
-        run: npm ci
+        run: yarn
 
       - name: Hexo clean
         uses: heowc/action-hexo@main
