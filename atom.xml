@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Incoder.App</title>
+  <icon>http://incoder.app/icon.png</icon>
+  
+  <link href="http://incoder.app/atom.xml" rel="self"/>
+  
+  <link href="http://incoder.app/"/>
+  <updated>2021-06-29T15:37:47.408Z</updated>
+  <id>http://incoder.app/</id>
+  
+  <author>
+    <name>Jerry xu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Github Action 自动部署网站</title>
+    <link href="http://incoder.app/2021/06/29/github-action-auto/"/>
+    <id>http://incoder.app/2021/06/29/github-action-auto/</id>
+    <published>2021-06-29T15:37:47.408Z</published>
+    <updated>2021-06-29T15:37:47.408Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+</feed>
