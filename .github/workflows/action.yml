@@ -15,14 +15,10 @@ jobs:
         run: yarn
 
       - name: Hexo clean
-        uses: heowc/action-hexo@main
-        with:
-          args: clean
+        run: ./node_modules/.bin/hexo clean
 
       - name: Hexo generate
-        uses: heowc/action-hexo@main
-        with:
-          args: generate
+        run: ./node_modules/.bin/hexo generate
 
       - name: Deploy to master
         uses: peaceiris/actions-gh-pages@v3
