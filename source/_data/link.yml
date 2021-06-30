@@ -1,5 +1,5 @@
 - class_name: 官方链接
-  class_desc: 那些人，那些事
+  class_desc: 
   link_list:
     - name: BladeCode
       link: https://incoder.org
@@ -13,43 +13,3 @@
       link: https://museflow.io
       avatar: https://res.cloudinary.com/incoder/image/upload/v1624863940/museflow/MuseFlow.png
       descr: 业余爱好
-
-- class_name: 常用链接
-  class_desc: 图片资源
-  link_list:
-    - name: Unsplash
-      link: https://unsplash.com
-      avatar: https://unsplash.com/favicon.ico
-      descr: 无版权图片网站，这家以风景为主，数量足够多，但是很多滤镜感太强，颜色太过厚重，比较适合做壁纸
-    - name: Pixabay
-      link: https://pixabay.com
-      avatar: https://pixabay.com/favicon-32x32.png
-      descr: 全球最大的免费图片网站了
-    - name: Pexels
-      link: https://www.pexels.com
-      avatar: https://www.pexels.com/favicon.ico
-      descr: 有很多精美的图片，而且比较好的一点是会有「一周精选」
-    - name: Visualhunt
-      link: https://visualhunt.com
-      avatar: https://visualhunt.com/favicon.ico
-      descr: 数量超级多的无版权图片网站，可以根据颜色进行搜索
-    - name: Gratisography
-      link: https://gratisography.com
-      avatar: https://gratisography.com/wp-content/themes/gratis-v3/favicon.png
-      descr: 每周都会更新，图片角度和题材都比较另类，人物图片不少
-    - name: StreetWill
-      link: http://streetwill.co
-      avatar: http://streetwill.co/favicon.png
-      descr: 优点是图片都比较精致小众，缺点是更新慢
-    - name: Magdeleine
-      link: https://magdeleine.co
-      avatar: https://cdn.magdeleine.co/wp-content/themes/magdeleine/images/favicon.ico
-      descr: 有编辑精选，图片也比较厚重
-    - name: Flickr
-      link: https://www.flickriver.com
-      avatar: https://www.flickriver.com/favicon.ico
-      descr: 雅虎著名的图片社区
-    - name: Life of Pix
-      link: https://www.lifeofpix.com
-      avatar: https://www.lifeofpix.com/wp-content/uploads/fbrfg/favicon.ico
-      descr: 景色建筑为主，色调比较统一

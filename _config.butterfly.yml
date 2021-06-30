@@ -55,13 +55,13 @@ social:
 
 # Algolia search
 algolia_search:
-  enable: true
+  enable: false
   hits:
     per_page: 6
 
 # Local search
 local_search:
-  enable: false
+  enable: true
 
 # Math (数学)
 # --------------------------------------
@@ -192,14 +192,14 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-  enable: false
+  enable: true
   QR_code:
-    # - img: /img/wechat.jpg
-    #   link:
-    #   text: wechat
-    # - img: /img/alipay.jpg
-    #   link:
-    #   text: alipay
+    - img: https://res.cloudinary.com/incoder/image/upload/v1525515979/wechatpay.png
+      link:
+      text: Wechat
+    - img: https://res.cloudinary.com/incoder/image/upload/v1525515979/alipay.png
+      link:
+      text: Alipay
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -267,7 +267,7 @@ comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo
   use:
-  - Valine
+  - Waline
   # - Valine
   # - Disqus
   text: true # Display the comment name next to the button
@@ -337,7 +337,7 @@ valine:
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: https://incoderapp-api.vercel.app # Waline server address url
+  serverURL: https://incoderapp-waline.vercel.app # Waline server address url
   avatar: monsterid # gravatar style https://zh-tw.gravatar.com/site/implement/images/#default-image
   avatarCDN: # Gravatar CDN baseURL
   bg: # waline background
@@ -659,7 +659,7 @@ aside:
   # 公告
   card_announcement:
     enable: true
-    content: 如果你在使用中遇到问题，请到留言板进行反馈，你也可以加入 <a href="https://incoder.slack.com">Slack</a> 社区中反馈你的问题
+    content: 如果你在使用中遇到问题，请到反馈板块进行留言，你也可以加入 <a class="hl-label pink" href="https://incoder.slack.com">Slack</a> 社区中反馈你的问题 </br> 网站构建状态：<img src="https://github.com/IncoderApp/incoderapp.github.io/actions/workflows/action.yml/badge.svg?branch=hexo"></img>
     # content: 如果你在使用中遇到问题，请到留言板进行反馈，你也可以加入 Slack 社区中反馈你的问题<div class="social-button"><a class="button--animated" href="https://t.me/incoderapp" target="_blank">Telegram</a></div>
   # 最新文章
   card_recent_post:
@@ -814,7 +814,7 @@ instantpage: false
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之间添加空格)
 pangu:
-  enable: false
+  enable: true
   field: site # site/post
 
 # Lazyload (图片懶加载)
