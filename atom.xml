@@ -6,7 +6,7 @@
   <link href="http://incoder.app/atom.xml" rel="self"/>
   
   <link href="http://incoder.app/"/>
-  <updated>2021-06-29T15:37:47.408Z</updated>
+  <updated>2021-06-30T15:28:22.983Z</updated>
   <id>http://incoder.app/</id>
   
   <author>
@@ -20,12 +20,18 @@
     <title>Github Action 自动部署网站</title>
     <link href="http://incoder.app/2021/06/29/github-action-auto/"/>
     <id>http://incoder.app/2021/06/29/github-action-auto/</id>
-    <published>2021-06-29T15:37:47.408Z</published>
-    <updated>2021-06-29T15:37:47.408Z</updated>
+    <published>2021-06-29T09:00:00.000Z</published>
+    <updated>2021-06-30T15:28:22.983Z</updated>
+    
+    
+    <summary type="html">自动化部署</summary>
     
     
     
+    <category term="Build" scheme="http://incoder.app/categories/Build/"/>
     
+    
+    <category term="Github Action" scheme="http://incoder.app/tags/Github-Action/"/>
     
   </entry>
   
