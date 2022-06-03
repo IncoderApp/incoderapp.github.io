@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Lawrefbook</title>
+      <link href="/2022/06/01/lawrefbook/"/>
+      <url>/2022/06/01/lawrefbook/</url>
+      
+        <content type="html"><![CDATA[<p>简单来概括《中国法律》应用是一款可以离线查看的法律快查应用</p><table><thead><tr><th align="center">兼容</th><th align="center">JDK</th><th align="center">编译</th></tr></thead><tbody><tr><td align="center"><a href="https://developer.android.google.cn/reference"><img src="https://img.shields.io/badge/Compatibleby-SDK%2024%20~%2031-06?logo=Android&labelColor=02303A"></a></td><td align="center"><a href="https://www.oracle.com/cn/java/technologies/javase/javase-jdk8-downloads.html"><img src="https://img.shields.io/badge/Use%20up%20by-JDK%201.8+-important?logo=java&labelColor=02303A"></a></td><td align="center"><a href="https://docs.gradle.org/7.3.3/release-notes.html"><img src="https://img.shields.io/badge/Build%20up%20by-Gradle%207.3.3%20bin-06A0CE?logo=Gradle&labelColor=02303A"></a></td></tr></tbody></table><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>五月迷上了网易云一个名为《<a href="http://music.163.com/radio/?id=966568618&userid=34509906">法外狂徒张三</a>》的电台，众所周知 “法外狂徒张三” 是罗老师口中常常为了讲解法律而虚拟的人物，最早看过几个罗老师的视频，印象很深，把枯燥无味的法律教条，以故事结合时事让我这个没有任何法律学习基础的非专业人士，也能听得入神，不得不被罗老师的幽默风趣的文学和对法律的严谨折服。引导了我偶尔也会去看看法律的文字了，翻着翻着，这不巧了嘛，在 Github 上看到了一个整理了相关法律的数据项目，已经有了 iOS 版本的应用，也有了 Web 网站，就差一个 Android 应用了。那就让我这个曾经的 Android 开发选手来为之添砖加瓦，于是有了现在的这个项目</p><p>项目遵循极简的项目依赖，简约的页面设计，实用的功能，就这样，一鼓作气在业余时间完成了项目开发。当然这里面还有很多的优化完善空间，但依然按捺不住想写一篇文章记录这个项目</p><h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><ol><li>聚合 <a href="https://flk.npc.gov.cn/">国家法律法规数据库</a>，<a href="https://www.court.gov.cn/">最高人民法院</a> 网站数据</li><li>离线使用</li><li>全文，片段法条收藏</li><li>文本分享</li><li>层级目录</li><li>高亮检索</li></ol><h2 id="页面预览"><a href="#页面预览" class="headerlink" title="页面预览"></a>页面预览</h2><table><thead><tr><th align="center">主页</th><th align="center">内容页</th><th align="center">个人页</th></tr></thead><tbody><tr><td align="center"><img src="https://res.cloudinary.com/incoder/image/upload/v1654225895/incoderapp/lawrefbook/feed.jpg"></td><td align="center"><img src="https://res.cloudinary.com/incoder/image/upload/v1654225910/incoderapp/lawrefbook/article.jpg"></td><td align="center"><img src="https://res.cloudinary.com/incoder/image/upload/v1654225840/incoderapp/lawrefbook/about.jpg"></td></tr><tr><td align="center">历史</td><td align="center">目录</td><td align="center">收藏</td></tr><tr><td align="center"><img src="https://res.cloudinary.com/incoder/image/upload/v1654225919/incoderapp/lawrefbook/history.jpg"></td><td align="center"><img src="https://res.cloudinary.com/incoder/image/upload/v1654225900/incoderapp/lawrefbook/catalog.jpg"></td><td align="center"><img src="https://res.cloudinary.com/incoder/image/upload/v1654225863/incoderapp/lawrefbook/favorite.jpg"></td></tr><tr><td align="center">搜索文章</td><td align="center">搜索内容</td><td align="center">等等</td></tr><tr><td align="center"><img src="https://res.cloudinary.com/incoder/image/upload/v1654225818/incoderapp/lawrefbook/title-search.jpg"></td><td align="center"><img src="https://res.cloudinary.com/incoder/image/upload/v1654225819/incoderapp/lawrefbook/article-search.jpg"></td><td align="center">……</td></tr></tbody></table><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><ol><li><a href="https://www.coolapk.com/apk/app.incoder.lawrefbook">Coolapk</a></li><li><a href="https://play.google.com/store/apps/details?id=app.incoder.lawrefbook">Google Play</a></li></ol><h2 id="开发寄语"><a href="#开发寄语" class="headerlink" title="开发寄语"></a>开发寄语</h2><ol><li>当前版本为离线应用；</li><li>应用遵循 Material Design 风格；</li><li>应用上架酷安，Google Play 应用市场；</li><li>应用完全开源，如有需要请遵循开源协议自行提取</li></ol><blockquote><p>应用还有很多需要优化的点，我会继续努力 💪</p></blockquote><h2 id="隐私协议"><a href="#隐私协议" class="headerlink" title="隐私协议"></a>隐私协议</h2><p>项目未集成第三方内库，所以没有任何的隐私问题，且项目完全开源</p><h2 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h2><p>本项目特别感谢 <a href="https://github.com/LawRefBook/Laws">@RanKKI</a> 提供开源数据，并使用了 <a href="https://github.com/RanKKI/LawRefBook">LawRefBook</a> 项目 icon，以及部分功能参考</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Android </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 中国法律 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Github Action 自动部署网站</title>
       <link href="/2021/06/29/github-action-auto/"/>
       <url>/2021/06/29/github-action-auto/</url>

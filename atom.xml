@@ -6,7 +6,7 @@
   <link href="http://incoder.app/atom.xml" rel="self"/>
   
   <link href="http://incoder.app/"/>
-  <updated>2021-06-30T15:28:22.983Z</updated>
+  <updated>2022-06-03T03:48:47.704Z</updated>
   <id>http://incoder.app/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Lawrefbook</title>
+    <link href="http://incoder.app/2022/06/01/lawrefbook/"/>
+    <id>http://incoder.app/2022/06/01/lawrefbook/</id>
+    <published>2022-06-01T11:11:11.000Z</published>
+    <updated>2022-06-03T03:48:47.704Z</updated>
+    
+    
+    <summary type="html">一个可以离线查看的法律快查应用</summary>
+    
+    
+    
+    <category term="Android" scheme="http://incoder.app/categories/Android/"/>
+    
+    
+    <category term="中国法律" scheme="http://incoder.app/tags/%E4%B8%AD%E5%9B%BD%E6%B3%95%E5%BE%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Github Action 自动部署网站</title>
     <link href="http://incoder.app/2021/06/29/github-action-auto/"/>
     <id>http://incoder.app/2021/06/29/github-action-auto/</id>
     <published>2021-06-29T09:00:00.000Z</published>
-    <updated>2021-06-30T15:28:22.983Z</updated>
+    <updated>2022-06-03T03:48:47.704Z</updated>
     
     
     <summary type="html">自动化部署</summary>
