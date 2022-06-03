@@ -19,3 +19,18 @@ description: 小破站升级记录
    * [x] Waline 留言
    * [x] 新增 Github Action 自动部署网站 文章
    * [x] 本地内容搜索
+
+## 2022.06.03
+
+{% note info %}
+✨ 法外狂徒张三检索手册 ~
+{% endnote %}
+
+1. {% label Android green %} + {% label JDK8 orange %} + {% label Gradle7.3.3 blue %} 创建《中国法律》应用
+2. 支持
+   * [x] 聚合 [国家法律法规数据库](https://flk.npc.gov.cn)，[最高人民法院](https://www.court.gov.cn) 网站数据
+   * [x] 离线使用
+   * [x] 全文，片段法条收藏
+   * [x] 文本分享
+   * [x] 层级目录
+   * [x] 高亮检索

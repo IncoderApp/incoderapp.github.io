@@ -14,5 +14,5 @@
 项目使用 Yarn 进行包管理应用，
 
 ```node
-yarn update hexo-theme-butterfly
+yarn upgrade hexo-theme-butterfly
 ```
