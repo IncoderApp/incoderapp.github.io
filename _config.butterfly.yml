@@ -190,7 +190,7 @@ toc:
 post_copyright:
   enable: true
   decode: true
-  author_href:
+  author_href: https://incoder.org
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
@@ -855,7 +855,7 @@ CDN:
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg
   # when set it to local, you need to install hexo-butterfly-extjs
-  third_party_provider: jsdelivr
+  third_party_provider: unpkg
   option:
     # main_css:
     # main:

@@ -5,6 +5,7 @@ categories: Android
 tags: 中国法律
 description: 一个可以离线查看的法律快查应用
 cover: https://res.cloudinary.com/incoder/image/upload/v1654225417/incoderapp/lawrefbook/lawrefbook-banner.png
+copyright_url: https://incoder.app/2022/06/01/lawrefbook/
 archive_img: https://res.cloudinary.com/incoder/image/upload/v1654225417/incoderapp/lawrefbook/lawrefbook-banner.png
 top_img: https://res.cloudinary.com/incoder/image/upload/v1654225417/incoderapp/lawrefbook/lawrefbook-banner.png
 ---
