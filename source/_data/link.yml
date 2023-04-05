@@ -5,6 +5,14 @@
       link: https://incoder.org
       avatar: https://res.cloudinary.com/incoder/image/upload/v1525515979/apple-touch-icon.png
       descr: 个人博客
+    - name: Backend
+      link: https://backend.incoder.org
+      avatar: https://res.cloudinary.com/incoder/image/upload/v1680684446/backend/backend.png
+      descr: 服务端技能栈
+    - name: Mobile
+      link: https://mobile.incoder.org
+      avatar: https://res.cloudinary.com/incoder/image/upload/v1680684392/mobile/mobile.png
+      descr: 移动端技能栈
     - name: RootCluster
       link: https://rootcluster.github.io
       avatar: https://res.cloudinary.com/incoder/image/upload/v1624863847/rootcluster/RootCluster.png
