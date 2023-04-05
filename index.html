@@ -1,13 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Incoder.App</title><meta name="keywords" content="incoder, incoderapp"><meta name="author" content="Jerry xu"><meta name="copyright" content="Jerry xu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
-<meta property="og:title" content="Incoder.App">
-<meta property="og:url" content="http://incoder.app/index.html">
-<meta property="og:site_name" content="Incoder.App">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://res.cloudinary.com/incoder/image/upload/v1624336604/incoderapp/architecture_48dp.svg">
-<meta property="article:author" content="Jerry xu">
-<meta property="article:tag" content="incoder, incoderapp">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://res.cloudinary.com/incoder/image/upload/v1624336604/incoderapp/architecture_48dp.svg"><link rel="shortcut icon" href="https://res.cloudinary.com/incoder/image/upload/v1624336752/incoderapp/architecture_white_48dp.svg"><link rel="canonical" href="http://incoder.app/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>Incoder.App</title><meta name="author" content="Jerry xu"><meta name="copyright" content="Jerry xu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description"><link rel="shortcut icon" href="https://res.cloudinary.com/incoder/image/upload/v1624336604/incoderapp/architecture_48dp.svg"><link rel="canonical" href="http://incoder.app/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/4.0.31/fancybox.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
@@ -36,20 +27,24 @@
   Snackbar: undefined,
   source: {
     justifiedGallery: {
-      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
-      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+      js: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.js',
+      css: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.css'
     }
   },
   isPhotoFigcaption: true,
   islazyload: false,
-  isAnchor: true
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
   title: 'Incoder.App',
   isPost: false,
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2022-06-04 15:52:35'
+  postUpdate: '2023-04-05 13:01:08'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -106,6 +101,21 @@
       document.head.appendChild(script)
     })
   
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
       win.activateDarkMode = function () {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
@@ -115,7 +125,7 @@
       win.activateLightMode = function () {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
         }
       }
       const t = saveToLocal.get('theme')
@@ -138,8 +148,42 @@
       }
     }
     detectApple()
-    })(window)</script><style type="text/css">.card-announcement .social-button{margin: .6rem 0 0 0; text-align: center;}.card-announcement .social-button a{display: block; margin: 0.2rem 0;background-color: var(--btn-bg); color: var(--btn-color); line-height: 1.6rem; transition: all .3s; position: relative; z-index: 1;}</style><meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="Incoder.App" type="application/atom+xml">
-</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://res.cloudinary.com/incoder/image/upload/v1624336604/incoderapp/architecture_48dp.svg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fab fa-fly"></i><span> 应用</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/version/"><i class="fa-fw fas fa-fan"></i><span> 版本</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/feedback/"><i class="fa-fw fas fa-comment-dots"></i><span> 反馈</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Incoder.App</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fab fa-fly"></i><span> 应用</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/version/"><i class="fa-fw fas fa-fan"></i><span> 版本</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/feedback/"><i class="fa-fw fas fa-comment-dots"></i><span> 反馈</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Incoder.App</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/incoderapp" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:incoder.xu@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://incoder.slack.com" target="_blank" title="Slack"><i class="fab fa-slack"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fas fa-rss"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/06/01/lawrefbook/" title="Lawrefbook"><img class="post_bg" src="https://res.cloudinary.com/incoder/image/upload/v1654225417/incoderapp/lawrefbook/lawrefbook-banner.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Lawrefbook"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/06/01/lawrefbook/" title="Lawrefbook">Lawrefbook</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-01T11:11:11.000Z" title="发表于 2022-06-01 11:11:11">2022-06-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Android/">Android</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E4%B8%AD%E5%9B%BD%E6%B3%95%E5%BE%8B/">中国法律</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2022/06/01/lawrefbook/#post-comment"><span class="waline-comment-count" id="/2022/06/01/lawrefbook/"></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">简单来概括《中国法律》应用是一款可以离线查看的法律快查应用
+    })(window)</script><style type="text/css">.card-announcement .social-button{margin: .6rem 0 0 0; text-align: center;}.card-announcement .social-button a{display: block; margin: 0.2rem 0;background-color: var(--btn-bg); color: var(--btn-color); line-height: 1.6rem; transition: all .3s; position: relative; z-index: 1;}</style><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Incoder.App" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://res.cloudinary.com/incoder/image/upload/v1624336604/incoderapp/architecture_48dp.svg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fab fa-fly"></i><span> 应用</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/version/"><i class="fa-fw fas fa-fan"></i><span> 版本</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/feedback/"><i class="fa-fw fas fa-comment-dots"></i><span> 反馈</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Incoder.App"><span class="site-name">Incoder.App</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fab fa-fly"></i><span> 应用</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/version/"><i class="fa-fw fas fa-fan"></i><span> 版本</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/feedback/"><i class="fa-fw fas fa-comment-dots"></i><span> 反馈</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Incoder.App</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/incoderapp" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:incoder.xu@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://incoder.slack.com" target="_blank" title="Slack"><i class="fab fa-slack"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fas fa-rss"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/07/01/lawrefbook1/" title="Lawrefbook 遇到问题"><img class="post-bg" src="https://res.cloudinary.com/incoder/image/upload/v1654225417/incoderapp/lawrefbook/lawrefbook-banner.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Lawrefbook 遇到问题"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/07/01/lawrefbook1/" title="Lawrefbook 遇到问题">Lawrefbook 遇到问题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-07-01T11:11:11.000Z" title="发表于 2022-07-01 11:11:11">2022-07-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Android/">Android</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E4%B8%AD%E5%9B%BD%E6%B3%95%E5%BE%8B/">中国法律</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2022/07/01/lawrefbook1/#post-comment"><span class="waline-comment-count" id="/2022/07/01/lawrefbook1/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">Lawrefbook 项目开发过程中遇到了不少问题，本篇文章记录面对问题的思考与实践。
+在完成初始版本后，数据源从 2022.5.1 结构由 JSON 变更成 sqlite3 数据库，因此从 1.1.0 版本开始进行了适配，刚好可以再次熟悉下数据库的相关操作。
+submodule 与 subtree早期分别使用过 submodule 和 subtree 对项目中的子项目进行管理，当时也没有细致去区分这两种模式适用的场景
+
+
+
+
+submodule
+subtree
+结果
+
+
+
+远程仓库空间占用
+submodule 只是引用，基本不占用额外空间
+子模块 copy，会占用较大的额外空间
+submodule 占用空间较小，略优
+
+
+本地空间占用
+可根据需要下载
+会下载整个项目
+所有模块基本都要下载，二者差异不大
+
+
+仓库克隆
+克降后所有子模块为空，需要注册及更新，同时更新后还需切换分支
+克隆之后即可使用
+submodule 步骤略多，subtree 占优
+
+
+更新本地仓库
+更新后所有子模块后指向最后一次提交，更新后需要重新切回分支，所有子模块只需一条更新语句即可
+所有子模块需要单独更新
+各有优 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/06/01/lawrefbook/" title="Lawrefbook"><img class="post-bg" src="https://res.cloudinary.com/incoder/image/upload/v1654225417/incoderapp/lawrefbook/lawrefbook-banner.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Lawrefbook"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/06/01/lawrefbook/" title="Lawrefbook">Lawrefbook</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-01T11:11:11.000Z" title="发表于 2022-06-01 11:11:11">2022-06-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Android/">Android</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E4%B8%AD%E5%9B%BD%E6%B3%95%E5%BE%8B/">中国法律</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2022/06/01/lawrefbook/#post-comment"><span class="waline-comment-count" id="/2022/06/01/lawrefbook/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">简单来概括《中国法律》应用是一款可以离线查看的法律快查应用
 
 
 
@@ -157,21 +201,23 @@ JDK
 开发环境说明，Android Studio 4.2 及以上版本，JDK 必须是 JDK11 ，因此该项目的 JDK 版本取决于你的运行环境，低版本 Android Studio，要求 JDK8+ 及以上即可
 
 
-背景五月迷上了网易云一个名为《法外狂徒张三》的电台，众所周知 “法外狂徒张三” 是罗老师口中常常为了讲解法律而虚拟的人物，最早看过几个罗老师的视频，印象很深，把枯燥无味的法律教条，以故事结合时事让我这个没有任何法律学习基础的非专业人士，也能听得入神，不得不被罗老师的幽默风趣的文学和对法律的严谨折服。引导了我偶尔也会去看看法律的文字了，翻着翻着，这不巧了嘛，在 Github 上看到了一个整理了相关法律的数据项目，已经有了 iOS 版本的应用，也有了 Web 网站，就差一个 Android 应用了。那就让我这个曾经的 Android 开发选手来为之添砖加瓦，于是有了现在的这个项目
-项目遵循极简的项目依赖，简约的页面设计，实用的功能，就这样，一鼓作气在业余时间完成了项目开发。当然这里 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/06/29/github-action-auto/" title="Github Action 自动部署网站"><img class="post_bg" src="https://res.cloudinary.com/incoder/image/upload/v1624941543/incoderapp/github-action.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Github Action 自动部署网站"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/06/29/github-action-auto/" title="Github Action 自动部署网站">Github Action 自动部署网站</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-06-29T09:00:00.000Z" title="发表于 2021-06-29 09:00:00">2021-06-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Build/">Build</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Github-Action/">Github Action</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2021/06/29/github-action-auto/#post-comment"><span class="waline-comment-count" id="/2021/06/29/github-action-auto/"></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">简单来说 Github Action 是 GitHub 提供的一项支持自动化构建项目，发布项目等一些列自动化的 CI 工具，在一定程度上让我们的开发工作，发布工作更加优雅和安全（只需要配置好相关的执行脚本），让我们更加专注于你所作事情的本身内容
+背景
+
+五月迷上了网易云一个名为《法外狂徒张三》的电台，众所周知 “法外狂徒张三” 是罗老师口中常常为了讲解法律而虚拟的人物，最早看过几个罗老师的视频，印象很深，把枯燥无味的法律教条，以故事结合时事让我这个没有任何法律学习基础的非专业人士，也能听得入神，不得不被罗老师的幽默风趣的文学和对法律的严谨折服。引导了我偶尔也会去看看法律的文字了，翻着翻着，这不巧了嘛，在 Github 上看到了一个整理了相关法律的数据项目，已经有了 iOS 版本的中国法律快查手册，也有了 Web 网站，就差一个 Android 应用了。那就让我这个曾经的 Android 开发选手来为之添砖加瓦，于是有了现在的这个项目
+项目遵循极简的项目依赖，简约的页面设计，实用的功能，就这样，一鼓作气在业余时间完成了项 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/06/29/github-action-auto/" title="Github Action 自动部署网站"><img class="post-bg" src="https://res.cloudinary.com/incoder/image/upload/v1624941543/incoderapp/github-action.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Github Action 自动部署网站"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/06/29/github-action-auto/" title="Github Action 自动部署网站">Github Action 自动部署网站</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-06-29T09:00:00.000Z" title="发表于 2021-06-29 09:00:00">2021-06-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Build/">Build</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Github-Action/">Github Action</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2021/06/29/github-action-auto/#post-comment"><span class="waline-comment-count" id="/2021/06/29/github-action-auto/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">简单来说 Github Action 是 GitHub 提供的一项支持自动化构建项目，发布项目等一些列自动化的 CI 工具，在一定程度上让我们的开发工作，发布工作更加优雅和安全（只需要配置好相关的执行脚本），让我们更加专注于你所作事情的本身内容
 背景和之前构建个人博客一样，将源码和生成的静态网站文件都放在同一个 Github 仓库中，master(或 main) 分支存放编译后的产物，hexo 存放项目的源代码，不同的是这次是直接依赖于 Github Action 来进行构建和发布，网站使用 Yarn 进行包管理
 步骤添加构建脚本在项目源码分支的根目录，添加 .github ，workflows  文件夹，并添加 file-name.yml  文件（我这里命名为 action.yml），结构如下
-12345678910111213incoderapp.github.io/    ├── .github/workflows/             # action 相关文件夹    │   └── action.yml                 # 执行任务配置文件    ├── ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://res.cloudinary.com/incoder/image/upload/v1624336604/incoderapp/architecture_48dp.svg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Jerry xu</div><div class="author-info__description">Incoder App</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/incoderapp" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:incoder.xu@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://incoder.slack.com" target="_blank" title="Slack"><i class="fab fa-slack"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">如果你在使用中遇到问题，请到反馈板块进行留言，你也可以加入 <a class="hl-label pink" target="_blank" rel="noopener" href="https://incoder.slack.com">Slack</a> 社区中反馈你的问题 </br> 网站构建状态：<img src="https://github.com/IncoderApp/incoderapp.github.io/actions/workflows/action.yml/badge.svg?branch=hexo"></img></div></div><div class="sticky_layout"><div class="card-widget card-categories"><div class="item-headline">
+12345678910111213incoderapp.github.io/    ├── .github/workflows/             # action 相关文件夹    │   └── action.yml                 # 执行任务配置文件    ├── ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://res.cloudinary.com/incoder/image/upload/v1624336604/incoderapp/architecture_48dp.svg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Jerry xu</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/incoderapp"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/incoderapp" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:incoder.xu@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://incoder.slack.com" target="_blank" title="Slack"><i class="fab fa-slack"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">如果你在使用中遇到问题，请到反馈板块进行留言，你也可以加入 <a class="hl-label pink" target="_blank" rel="noopener" href="https://incoder.slack.com">Slack</a> 社区中反馈你的问题 </br> 网站构建状态：<img src="https://github.com/IncoderApp/incoderapp.github.io/actions/workflows/action.yml/badge.svg?branch=hexo"></img></div></div><div class="sticky_layout"><div class="card-widget card-categories"><div class="item-headline">
             <i class="fas fa-folder-open"></i>
             <span>分类</span>
             
             </div>
             <ul class="card-category-list" id="aside-cat-list">
-            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Android/"><span class="card-category-list-name">Android</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Build/"><span class="card-category-list-name">Build</span><span class="card-category-list-count">1</span></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Github-Action/" style="font-size: 1.1em; color: #999">Github Action</a> <a href="/tags/%E4%B8%AD%E5%9B%BD%E6%B3%95%E5%BE%8B/" style="font-size: 1.1em; color: #999">中国法律</a></div></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">2</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2022-06-04T15:52:35.072Z"></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">1.4k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-06-04T15:52:35.074Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2022 By Jerry xu</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script>function panguFn () {
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Android/"><span class="card-category-list-name">Android</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Build/"><span class="card-category-list-name">Build</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Github-Action/" style="font-size: 1.1em; color: #999">Github Action</a> <a href="/tags/%E4%B8%AD%E5%9B%BD%E6%B3%95%E5%BE%8B/" style="font-size: 1.5em; color: #99a9bf">中国法律</a></div></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">3</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2023-04-05T13:01:08.059Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">4.4k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-04-05T13:01:08.068Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2023 By Jerry xu</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-butterfly/4.7.0/js/utils.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-butterfly/4.7.0/js/main.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/4.0.31/fancybox.umd.min.js"></script><script>function panguFn () {
   if (typeof pangu === 'object') pangu.autoSpacingPage()
   else {
-    getScript('https://cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js')
+    getScript('https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js')
       .then(() => {
         pangu.autoSpacingPage()
       })
@@ -186,18 +232,7 @@ function panguInit () {
   }
 }
 
-document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><script>var preloader = {
-  endLoading: () => {
-    document.body.style.overflow = 'auto';
-    document.getElementById('loading-box').classList.add("loaded")
-  },
-  initLoading: () => {
-    document.body.style.overflow = '';
-    document.getElementById('loading-box').classList.remove("loaded")
-
-  }
-}
-window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>(() => {
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(() => {
   function loadWaline () {
     function initWaline () {
       let initData = {
@@ -208,31 +243,46 @@ window.addEventListener('load',preloader.endLoading())</script><div class="js-pj
       const waline = Waline.init(initData)
     }
 
-    if (typeof Waline === 'function') initWaline() 
-    else getScript('https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.js').then(initWaline)
+    if (typeof Waline === 'object') initWaline() 
+    else getScript('https://cdnjs.cloudflare.com/ajax/libs/waline/2.14.7/waline.min.js').then(initWaline)
   }
 
   window.pjax ? loadWaline() : window.addEventListener('load', loadWaline)
-})()</script><script>function subtitleType () {
-  if (true) { 
-    window.typed = new Typed("#subtitle", {
-      strings: [""],
+})()</script><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
       startDelay: 300,
       typeSpeed: 150,
       loop: true,
-      backSpeed: 50
-    })
-  } else {
-    document.getElementById("subtitle").innerHTML = ''
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
   }
 }
-
-if (true) {
-  if (typeof Typed === 'function') {
-    subtitleType()
-  } else {
-    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
-  }
-} else {
-  subtitleType()
-}</script></div><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="true"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+</script><script>function subtitleType () {
+  getScript('https://sdk.jinrishici.com/v2/browser/jinrishici.js').then(() => {
+    jinrishici.load(result =>{
+      if (true) {
+        const sub = ["生命不息，折腾不止！"]
+        const content = result.data.content
+        sub.unshift(content)
+        typedJSFn.init(sub)
+      } else {
+        document.getElementById('subtitle').innerHTML = result.data.content
+      }
+    })
+  })
+}
+typedJSFn.run(subtitleType)
+</script></div><script id="click-heart" src="https://cdnjs.cloudflare.com/ajax/libs/butterfly-extsrc/1.1.3/click-heart.min.js" async="async" mobile="true"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-butterfly/4.7.0/js/search/local-search.min.js"></script></div></body></html>
