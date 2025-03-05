@@ -2,6 +2,8 @@
 title: 关于
 date: 2021-06-05 00:00:00
 type: "about"
+aside: false
+toc: false
 comments: false
 ---
 
@@ -11,5 +13,4 @@ comments: false
 
 ## 本站
 
-当前网站使用了 {% label Hexo blue %} + {% label Butterfly pink %} + {% label Gihub-Pages %} 搭建，只关心文章内容的输出
-
+当前网站使用了 {% label Hexo blue %} + {% label AnZhiYu pink %} + {% label Gihub-Pages %} 搭建，只关心文章内容的输出

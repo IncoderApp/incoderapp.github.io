@@ -1,23 +1,93 @@
-- class_name: 官方链接
-  class_desc: 
+- class_name: ".org 域"
+  flink_style: anzhiyu
+  hundredSuffix: ""
   link_list:
     - name: BladeCode
       link: https://incoder.org
-      avatar: https://res.cloudinary.com/incoder/image/upload/v1525515979/apple-touch-icon.png
+      avatar: https://res.cloudinary.com/incoder/image/upload/v1709221812/incoderapp/app/black-incoder.png
+      siteshot: https://npm.elemecdn.com/anzhiyu-theme-static@1.1.6/img/blog.anheyu.com.jpg
       descr: 个人博客
+      color: vip
+      tag: 主站
     - name: Backend
       link: https://backend.incoder.org
-      avatar: https://res.cloudinary.com/incoder/image/upload/v1680684446/backend/backend.png
+      avatar: https://res.cloudinary.com/incoder/image/upload/v1709221737/incoderapp/app/black-backend.png
       descr: 服务端技能栈
+      color: speed
+      tag: 领域
     - name: Mobile
       link: https://mobile.incoder.org
-      avatar: https://res.cloudinary.com/incoder/image/upload/v1680684392/mobile/mobile.png
+      avatar: https://res.cloudinary.com/incoder/image/upload/v1709221861/incoderapp/app/black-mobile.png
       descr: 移动端技能栈
-    - name: RootCluster
-      link: https://rootcluster.github.io
-      avatar: https://res.cloudinary.com/incoder/image/upload/v1624863847/rootcluster/RootCluster.png
-      descr: 学习，练习
+      color: speed
+      tag: 领域
+
+- class_name: ".app 域"
+  flink_style: anzhiyu
+  hundredSuffix: ""
+  link_list:
+    - name: IncoderApp
+      link: https://incoder.app
+      avatar: https://res.cloudinary.com/incoder/image/upload/v1709221686/incoderapp/app/black-incodeapp.png
+      descr: 个人应用集
+      color: vip
+      tag: 主站
+    - name: OpenCWMP
+      link: https://cwmp.incoder.app
+      avatar: https://res.cloudinary.com/incoder/image/upload/v1709220476/incoderapp/app/black-hub.png
+      descr: 广域网协议
+      color: speed
+      tag: 领域
+    - name: Privacy
+      link: https://privacy.incoder.app
+      avatar: https://res.cloudinary.com/incoder/image/upload/v1709221984/incoderapp/app/black-privicy.png
+      descr: 应用隐私归档
+      color: speed
+      tag: 领域
+
+- class_name: ".io 域"
+  flink_style: anzhiyu
+  hundredSuffix: ""
+  link_list:
     - name: MuseFlow
       link: https://museflow.io
-      avatar: https://res.cloudinary.com/incoder/image/upload/v1624863940/museflow/MuseFlow.png
+      avatar: https://res.cloudinary.com/incoder/image/upload/v1709221936/incoderapp/app/black-museflow.png
       descr: 业余爱好
+      color: vip
+      tag: 技术
+    - name: RootCluster
+      link: https://rootcluster.github.io
+      avatar: https://res.cloudinary.com/incoder/image/upload/v1709222094/incoderapp/app/black-rootcluster.png
+      descr: 学习，练习
+      color: vip
+      tag: 技术
+
+- class_name: Mobile 应用
+  flink_style: anzhiyu
+  hundredSuffix: ""
+  link_list:
+    - name: LawYou
+      link: https://incoder.app
+      avatar: https://res.cloudinary.com/incoder/image/upload/v1708765062/incoderapp/app/lawyou-round.png
+      descr: 离线法律快查
+      recommend: true
+    - name: NetGuru
+      link: https://incoder.app
+      avatar: https://res.cloudinary.com/incoder/image/upload/v1741188977/incoderapp/app/net_guru.png
+      descr: 网络大师，开发ing
+      recommend: true
+    - name: OpenBluetooth
+      link: https://incoder.app
+      avatar: https://res.cloudinary.com/incoder/image/upload/v1741188609/incoderapp/app/open_bluetooth.png
+      descr: 多种蓝牙开源库实践，开发ing
+      recommend: true
+
+- class_name: Web 应用
+  flink_style: anzhiyu
+  hundredSuffix: ""
+  link_list:
+    - name: NavPanel
+      link: https://incoder.app
+      avatar: https://res.cloudinary.com/incoder/image/upload/v1725194031/incoderapp/app/navpanel-round.png
+      descr: 导航面板，开发ing
+      recommend: true

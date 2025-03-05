@@ -7,13 +7,13 @@ title: Incoder.App
 subtitle: ''
 description: ''
 keywords: incoder, incoderapp
-author: Jerry xu
+author: Jerry Xu
 language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://incoder.app
+url: https://incoder.app
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -97,12 +97,16 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: butterfly
+theme: anzhiyu
 
 feed:
   enable: true
-  type: atom
-  path: atom.xml
+  type: 
+    - atom
+    - rss2
+  path: 
+    - atom.xml
+    - rss2.xml
   limit: 20
   hub:
   content:
@@ -117,6 +121,16 @@ algolia:
   applicationID: 'W57995WN0V'
   apiKey: 'f5ed37765a08b23aa19c53ea337cb6c1'
   indexName: 'incoder.app'
+  chunkSize: 5000
+  fields:
+    - content:strip:truncate,0,500
+    - excerpt:strip
+    - gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

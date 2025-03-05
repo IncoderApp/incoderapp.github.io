@@ -1,0 +1,98 @@
+- class_name: 关于页
+  subtitle: 🫧 热爱可抵岁月漫长 ✨
+  avatarImg: https://res.cloudinary.com/incoder/image/upload/v1706447970/incoderapp/incoderapp-withe.svg
+  avatarSkills:
+    left:
+      - 🏠 学以致用，独立思考
+      - 🔍 立足长远，保持耐心
+      - 🔨 生命不息，折腾不止
+    right:
+      - 打破基石，边界外延 🤝
+      - 千帆过尽，不忘初心 🏃
+      - 勇于尝试，上路流浪 💢
+  name: Jerry Xu
+  description: 一名 通信研发工程师、独立开发者
+  aboutsiteTips:
+    tips: 追求
+    title1: 源于
+    title2: 热爱而去 感受
+    word:
+      - 生命不息
+      - 折腾不止
+      - 但不能瞎折腾
+
+  # 没有开关，已通过自定义 css 将其隐藏
+  # -----start
+  helloAbout: 这里是创建该网站的初衷
+  skillsTips:
+    tips: 技能
+    title: 开启创造力
+  careers:
+    tips: 生涯
+    title: 无限进步
+    list:
+      - desc: EDU,软件工程专业
+        color: "#357ef5"
+    img: https://bu.dusays.com/2023/04/21/644287166329b.png
+  statistic:
+    link: /archives
+    text: 文章隧道
+    cover: https://bu.dusays.com/2023/05/01/644f4b037b930.jpg
+  map:
+    title: 我现在住在
+    StrengthenTitle: 中国，杭州
+    background: https://bu.dusays.com/2023/07/05/64a4c61cb20ef.jpg
+    backgroundDark: https://bu.dusays.com/2023/07/05/64a4c63495ac5.jpg
+  selfInfo:
+    selfInfoTips1: 生于
+    selfInfoContentYear: 2025
+    selfInfoTips2: 中国
+    selfInfoContent2: 计算机科学与技术
+    selfInfoTips3: 现在职业
+    selfInfoContent3: 软件研发工程师
+  personalities:
+    author_name: 执政官
+    personality_type: ESFJ-A
+    photo_url: https://bu.dusays.com/2023/07/05/64a4c63495ac5.jpg
+    personality_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.8/img/svg/ESFJ-A.svg
+    name_url: https://www.16personalities.com/ch/esfj-%E4%BA%BA%E6%A0%BC
+  maxim:
+    maxim_tips: 座右铭
+    maxim_top: 生活明朗，
+    maxim_bottom: 万物可爱。
+  buff:
+    buff_tips: 特长
+    buff_top: 脑回路新奇的 酸菜鱼
+    buff_bottom: 二次元指数 MAX
+  game:
+    game_tips: 爱好游戏
+    game_title: 原神
+    game_uid: "UID: 125766904"
+    game_bg: https://bu.dusays.com/2023/04/22/64433bf26e25d.webp
+  comic:
+    comic_tips: 爱好番剧
+    comic_title: 追番
+    comic_list:
+      - name: 约定的梦幻岛
+        href: https://www.bilibili.com/bangumi/media/md5267750/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+        cover: https://bu.dusays.com/2023/05/27/647166c44b414.webp
+
+  like:
+    like_tips: 关注偏好
+    like_title: 数码科技
+    like_bg: https://bu.dusays.com/2022/12/06/638f5f05ce1f7.jpg
+    like_bottom: 手机、电脑软硬件
+  music:
+    music_tips: 音乐偏好
+    music_title: 粤语、动漫
+    music_bg: https://p2.music.126.net/Mrg1i7DwcwjWBvQPIMt_Mg==/79164837213438.jpg
+    music_link: /music
+  # -----end
+
+  reward_list:
+    - name: 大蛇丸
+      amount: 88.8
+      datatime: 2023-03-28
+    - name: 卡卡西
+      amount: 66.6
+      datatime: 2023-03-24

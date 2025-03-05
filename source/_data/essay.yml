@@ -1,0 +1,17 @@
+- title: 动态
+  subTitle: 千帆过尽，不忘初心 ～
+  tips: 勇于尝试，上路流浪
+  buttonText: 关于我
+  buttonLink: /about/
+  limit: 30
+  home_essay: true
+  top_background: https://images.unsplash.com/photo-1501696461415-6bd6660c6742
+  essay_list:
+    - content: Lawrefbook 1.0.0 版本发布
+      date: 2022/06/01 11:11:11
+      link: https://blog.anheyu.com/music/?id=7269231710&server=tencent
+      from: Lawrefbook
+    - content: Lawrefbook 1.1.0 版本发布
+      date: 2023/04/06 11:11:11
+      link: https://blog.anheyu.com/music/?id=7269231710&server=tencent
+      from: Lawrefbook

@@ -1,0 +1,106 @@
+.post-copyright__author_img_back {
+  width: 66px;
+  height: 66px;
+}
+.post-copyright__author_img_front {
+  width: 66px;
+  height: 66px;
+}
+
+/* home essay */
+
+/* https://www.iconfont.cn/collections/detail?cid=44481 */
+.anzhiyu-icon-jike:before {
+  content: "\e648" !important;
+}
+
+#bber-talk .li-style {
+  text-align: initial;
+}
+.bber-logo {
+  animation: rotate-clockwise 2s linear infinite;
+}
+
+@keyframes rotate-clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* bottom logo */
+.footer_mini_logo {
+  padding: 6px;
+  /* background: var(--anzhiyu-fontcolor); */
+  background: var(--anzhiyu-main);
+}
+
+/* link page */
+#random-post {
+  display: none;
+}
+.banners-title-small {
+  display: none;
+}
+.title-h2-a {
+  display: none;
+}
+
+/* about page hide */
+#about-page .author-content:nth-of-type(n + 3):nth-of-type(-n + 9) {
+  display: none !important;
+}
+.hello-about {
+  display: none;
+}
+
+/* post page */
+.post-copyright__author_img img {
+  background: var(--anzhiyu-main);
+  padding: 6px;
+}
+
+/* theme color */
+[data-theme="light"] {
+  --anzhiyu-theme: #2962ff;
+  --anzhiyu-main: #2962ff;
+}
+
+[data-theme="dark"] {
+  --anzhiyu-theme: #311b92;
+  --anzhiyu-main: #311b92;
+}
+
+/* Mask switch */
+[data-theme="dark"] #console .button-group .console-btn-item a.darkmode_switchbutton {
+  background: var(--anzhiyu-main-op-deep);
+  color: var(--anzhiyu-white);
+}
+
+/* Mask fillet */
+#console .console-card.history .card-archive-list .card-archive-list-link {
+  margin: 5px;
+}
+
+@keyframes waveAnimation {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5), 0 0 20px rgba(0, 0, 255, 0.5), 0 0 30px rgba(0, 0, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.5), 0 0 40px rgba(0, 0, 255, 0.5), 0 0 60px rgba(0, 0, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5), 0 0 20px rgba(0, 0, 255, 0.5), 0 0 30px rgba(0, 0, 255, 0.5);
+  }
+}
+
+.footer_mini_logo {
+  /* width: 100px;
+  height: 100px; */
+  background-color: var(--anzhiyu-main);
+  border-radius: 50%;
+  position: relative;
+  animation: waveAnimation 3s infinite ease-in-out;
+}
