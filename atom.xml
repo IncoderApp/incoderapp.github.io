@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Incoder.App</title>
-  <icon>http://incoder.app/icon.png</icon>
+  <icon>https://incoder.app/icon.png</icon>
   
-  <link href="http://incoder.app/atom.xml" rel="self"/>
+  <link href="https://incoder.app/atom.xml" rel="self"/>
   
-  <link href="http://incoder.app/"/>
-  <updated>2023-04-05T13:00:53.340Z</updated>
-  <id>http://incoder.app/</id>
+  <link href="https://incoder.app/"/>
+  <updated>2025-03-06T14:42:37.358Z</updated>
+  <id>https://incoder.app/</id>
   
   <author>
-    <name>Jerry xu</name>
+    <name>Jerry Xu</name>
     
   </author>
   
@@ -18,58 +18,39 @@
   
   <entry>
     <title>Lawrefbook 遇到问题</title>
-    <link href="http://incoder.app/2022/07/01/lawrefbook1/"/>
-    <id>http://incoder.app/2022/07/01/lawrefbook1/</id>
+    <link href="https://incoder.app/2022/07/01/lawrefbook1/"/>
+    <id>https://incoder.app/2022/07/01/lawrefbook1/</id>
     <published>2022-07-01T11:11:11.000Z</published>
-    <updated>2023-04-05T13:00:53.340Z</updated>
+    <updated>2025-03-06T14:42:37.358Z</updated>
     
     
     <summary type="html">《中国法律》应用开发过程中遇到的问题</summary>
     
     
     
-    <category term="Android" scheme="http://incoder.app/categories/Android/"/>
+    <category term="Android" scheme="https://incoder.app/categories/Android/"/>
     
     
-    <category term="中国法律" scheme="http://incoder.app/tags/%E4%B8%AD%E5%9B%BD%E6%B3%95%E5%BE%8B/"/>
+    <category term="中国法律" scheme="https://incoder.app/tags/%E4%B8%AD%E5%9B%BD%E6%B3%95%E5%BE%8B/"/>
     
   </entry>
   
   <entry>
     <title>Lawrefbook</title>
-    <link href="http://incoder.app/2022/06/01/lawrefbook/"/>
-    <id>http://incoder.app/2022/06/01/lawrefbook/</id>
+    <link href="https://incoder.app/2022/06/01/lawrefbook/"/>
+    <id>https://incoder.app/2022/06/01/lawrefbook/</id>
     <published>2022-06-01T11:11:11.000Z</published>
-    <updated>2023-04-05T13:00:53.340Z</updated>
+    <updated>2025-03-06T14:42:37.357Z</updated>
     
     
     <summary type="html">一个可以离线查看的法律快查应用</summary>
     
     
     
-    <category term="Android" scheme="http://incoder.app/categories/Android/"/>
+    <category term="Android" scheme="https://incoder.app/categories/Android/"/>
     
     
-    <category term="中国法律" scheme="http://incoder.app/tags/%E4%B8%AD%E5%9B%BD%E6%B3%95%E5%BE%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Github Action 自动部署网站</title>
-    <link href="http://incoder.app/2021/06/29/github-action-auto/"/>
-    <id>http://incoder.app/2021/06/29/github-action-auto/</id>
-    <published>2021-06-29T09:00:00.000Z</published>
-    <updated>2023-04-05T13:00:53.340Z</updated>
-    
-    
-    <summary type="html">自动化部署</summary>
-    
-    
-    
-    <category term="Build" scheme="http://incoder.app/categories/Build/"/>
-    
-    
-    <category term="Github Action" scheme="http://incoder.app/tags/Github-Action/"/>
+    <category term="中国法律" scheme="https://incoder.app/tags/%E4%B8%AD%E5%9B%BD%E6%B3%95%E5%BE%8B/"/>
     
   </entry>
   
