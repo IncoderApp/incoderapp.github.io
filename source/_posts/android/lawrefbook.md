@@ -10,7 +10,16 @@ archive_img: https://res.cloudinary.com/incoder/image/upload/v1654225417/incoder
 top_img: https://res.cloudinary.com/incoder/image/upload/v1654225417/incoderapp/lawrefbook/lawrefbook-banner.png
 ---
 
-简单来概括《中国法律》应用是一款可以离线查看的法律快查应用
+{% note warning %}
+本应用是一款可离线使用地法律知识 App，供使用者随时随地阅读查看法律内容，也可以分享或保存法条知识。
+
+应用数据内容源于《国家法律法规数据库》，<https://flk.npc.gov.cn>。国家法律法规数据库目前提供中华人民共和国现行有效的宪法（含修正案）、法律、行政法规、监察法规、地方性法规、自治条例和单行条例、经济特区法规、司法解释电子文本。国家法律法规数据库由全国人大常委会办公厅维护。
+
+本应用不代表政府机关。
+本应用不是政府提供的服务。
+本应用不是政府机关提供的 App。
+若与各法规主管机关公布的资料不同，请以各法规主管机关公布资料为准。
+{% endnote %}
 
 | 兼容 | JDK | 编译 |
 |:-----------:|:-----------:|:-----------:|
@@ -64,13 +73,18 @@ top_img: https://res.cloudinary.com/incoder/image/upload/v1654225417/incoderapp/
 5. 层级目录
 6. 高亮检索
 
-### 1.1.0（20230406）
+### 1.1.0（20250412）
 
-1. [x] 数据 [9f3c74b6](https://github.com/LawRefBook/Laws/tree/9f3c74b6714e8c3e6514d3b5e56c45d6b2c4065d) 按照法条解析
-2. [x] 目录可定位
-3. [x] 内容标题剧中显示
-4. [x] 分享内容生成图片（限制数量：3条法条）
-5. [ ] 应用上架 F-Droid
+1. 数据 [1a26dbe](https://github.com/LawRefBook/Laws/tree/1a26dbeebd942b0782fb0d7d282e4c4732b22fa1) 按照法条解析
+2. 目录可定位
+3. 内容标题剧中显示
+4. 分享内容生成图片（限制数量：3条法条）
+5. 隐私协议版本管理
+
+### 1.1.1（20250514）
+
+1. 数据 [2f4c5c2](https://github.com/LawRefBook/Laws/tree/2f4c5c23716267af9dbebbbbd6cbbf732b101981) 按照法条解析
+2. 应用隐私更新
 
 ### 1.2.0
 

@@ -389,7 +389,7 @@ public class Law implements Serializable {
 
 适用于应用没有历史 Room 数据库，使用 SQLite 数据全量填充 Room 数据库
 
-https://developer.android.google.cn/training/data-storage/room/prepopulate#from-asset
+<https://developer.android.google.cn/training/data-storage/room/prepopulate#from-asset>
 
 ```java
 static synchronized AppDatabase getInstance(Context context) {
@@ -454,10 +454,6 @@ static synchronized AppDatabase getInstance(Context context) {
 [sqlite中的限制：数据库大小、表数、列数、行数、参数个数、连接数等](https://blog.csdn.net/u010168781/article/details/103291193)
 [sqlite3数据库最大可以是多大？可以存放多少数据？读写性能怎么样？](https://blog.csdn.net/libaineu2004/article/details/108815466)
 [SQLite学习八、TEXT类型读取超过2M的字符串](https://www.jianshu.com/p/30b18212df8d)
-
-https://raw.githubusercontent.com/IncoderApp/LawRefBook/main/gradlew.bat
-
-https://api.github.com/repos/IncoderApp/LawRefBook/tags
 
 ### macOS 下 Python 路径问题
 

@@ -69,7 +69,7 @@
     - name: LawYou
       link: https://incoder.app
       avatar: https://res.cloudinary.com/incoder/image/upload/v1708765062/incoderapp/app/lawyou-round.png
-      descr: 离线法律快查
+      descr: 法律快查，重构ing
       recommend: true
     - name: NetGuru
       link: https://incoder.app
