@@ -6,7 +6,7 @@
   <link href="https://incoder.app/atom.xml" rel="self"/>
   
   <link href="https://incoder.app/"/>
-  <updated>2025-03-06T14:42:37.358Z</updated>
+  <updated>2025-05-15T15:48:08.618Z</updated>
   <id>https://incoder.app/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Lawrefbook 遇到问题</title>
-    <link href="https://incoder.app/2022/07/01/lawrefbook1/"/>
-    <id>https://incoder.app/2022/07/01/lawrefbook1/</id>
+    <link href="https://incoder.app/android/lawrefbook-story/"/>
+    <id>https://incoder.app/android/lawrefbook-story/</id>
     <published>2022-07-01T11:11:11.000Z</published>
-    <updated>2025-03-06T14:42:37.358Z</updated>
+    <updated>2025-05-15T15:48:08.618Z</updated>
     
     
     <summary type="html">《中国法律》应用开发过程中遇到的问题</summary>
@@ -37,10 +37,10 @@
   
   <entry>
     <title>Lawrefbook</title>
-    <link href="https://incoder.app/2022/06/01/lawrefbook/"/>
-    <id>https://incoder.app/2022/06/01/lawrefbook/</id>
+    <link href="https://incoder.app/android/lawrefbook/"/>
+    <id>https://incoder.app/android/lawrefbook/</id>
     <published>2022-06-01T11:11:11.000Z</published>
-    <updated>2025-03-06T14:42:37.357Z</updated>
+    <updated>2025-05-15T15:48:08.618Z</updated>
     
     
     <summary type="html">一个可以离线查看的法律快查应用</summary>

@@ -15,13 +15,13 @@
     <atom:link href="https://incoder.app/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Thu, 06 Mar 2025 14:42:37 GMT</pubDate>
+    <pubDate>Thu, 15 May 2025 15:48:08 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>Lawrefbook 遇到问题</title>
-      <link>https://incoder.app/2022/07/01/lawrefbook1/</link>
-      <guid>https://incoder.app/2022/07/01/lawrefbook1/</guid>
+      <link>https://incoder.app/android/lawrefbook-story/</link>
+      <guid>https://incoder.app/android/lawrefbook-story/</guid>
       <pubDate>Fri, 01 Jul 2022 11:11:11 GMT</pubDate>
       
       <description>《中国法律》应用开发过程中遇到的问题</description>
@@ -35,14 +35,14 @@
       <category domain="https://incoder.app/tags/%E4%B8%AD%E5%9B%BD%E6%B3%95%E5%BE%8B/">中国法律</category>
       
       
-      <comments>https://incoder.app/2022/07/01/lawrefbook1/#disqus_thread</comments>
+      <comments>https://incoder.app/android/lawrefbook-story/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Lawrefbook</title>
-      <link>https://incoder.app/2022/06/01/lawrefbook/</link>
-      <guid>https://incoder.app/2022/06/01/lawrefbook/</guid>
+      <link>https://incoder.app/android/lawrefbook/</link>
+      <guid>https://incoder.app/android/lawrefbook/</guid>
       <pubDate>Wed, 01 Jun 2022 11:11:11 GMT</pubDate>
       
       <description>一个可以离线查看的法律快查应用</description>
@@ -56,7 +56,7 @@
       <category domain="https://incoder.app/tags/%E4%B8%AD%E5%9B%BD%E6%B3%95%E5%BE%8B/">中国法律</category>
       
       
-      <comments>https://incoder.app/2022/06/01/lawrefbook/#disqus_thread</comments>
+      <comments>https://incoder.app/android/lawrefbook/#disqus_thread</comments>
       
     </item>
     
